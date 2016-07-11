@@ -8,6 +8,9 @@ class Oystercard
 
   def top_up(amount)
     @get_balance += amount
+    raise 'Balance cannot exceed 90' if @get_balance > 90? true : false
+
   end
+
 
 end
